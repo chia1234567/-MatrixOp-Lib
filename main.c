@@ -76,8 +76,6 @@ printf("\nDeterminant of C = %d\n", mat_det(C));
 
 printf("\n"); 
 
- 
-
 adjoint(C, R); 
 
 print(R); 
