@@ -66,7 +66,7 @@ for (int j = 0; j < SIZE; j++) {
 
         } 
 
-  } 
+} 
 
 } 
 
@@ -101,31 +101,14 @@ void adjoint(int A[SIZE][SIZE],int R[SIZE][SIZE]){
 
  
  int g = A[2][0], h = A[2][1], i = A[2][2]; 
-
- 
-
- int C00 =  (e * i - f * h); 
-
+ int C00 = (e * i - f * h); 
  int C01 = -(d * i - f * g); 
-
- 
-
  int C10 = -(b * i - c * h); 
-
 int C11 = (a * i - c * g); 
-
 int C12 = -(a * h - b * g); 
-
- 
-
  int C20 = (b * f - c * e); 
-
  int C21 = -(a * f - c * d); 
-
 int C22 = (a * e - b * d); 
-
- 
-
 R[0][0] = C00; C[0][1] = C10; C[0][2] = C20; 
 
  R[1][0] = C01; C[1][1] = C11; C[1][2] = C21; 
@@ -158,13 +141,13 @@ mat_adjoint(A, adj);
 
  R[i][j] = (double)adj[i][j] / (double)det; 
 
-  } 
+ } 
 
  } 
 
  
 
-    return 1; 
+ return 1; 
 
 } 
 
