@@ -62,4 +62,48 @@ print(R);
 
  printf("\n"); 
 
+  printf("A transpose =\n"); 
+
+ mat_transpose(A,R); 
+
+mat_print(R); 
+
+ 
+
+printf("\nDeterminant of C = %d\n", mat_det(C)); 
+
+ 
+
+printf("\n"); 
+
+ 
+
+adjoint(C, R); 
+
+print(R); 
+
+ 
+
+ printf("\nInverse of C =\n"); 
+
+ if (mat_inverse(C, Inv)) { 
+
+print_double(Inv); 
+
+ } else { 
+
+ printf("C is not invertible (det = 0)\n"); 
+
+ } 
+
+ 
+
+return 0; 
+
+} 
+
+ 
+
+ 
+
  
