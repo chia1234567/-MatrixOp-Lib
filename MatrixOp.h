@@ -13,4 +13,4 @@ void adjoint(int A[SIZE][SIZE],int C[SIZE][SIZE]);
 int inverse(int A[SIZE][SIZE],double C[SIZE][SIZE]); 
 void print(int A[SIZE][SIZE]); 
 void print_double(double A[SIZE][SIZE]); 
-#endif    
+#endif     
