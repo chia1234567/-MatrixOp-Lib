@@ -1,22 +1,23 @@
 #include <stdio.h> 
 #include "MatrixOp.h" 
-
- 
-
 void add(int A[SIZE][SIZE],int B[SIZE][SIZE],int C[SIZE][SIZE]){ 
-    for (int i = 0; i < SIZE; i++) { 
-        for (int j = 0; j < SIZE; j++) { 
-            C[i][j] = A[i][j] + B[i][j]; 
-            } 
-        } 
+ for (int i = 0; i < SIZE; i++) { 
+ for (int j = 0; j < SIZE; j++) { 
+ C[i][j] = A[i][j] + B[i][j];
+ } 
+ } 
 } 
-
-void mat_print(int A[SIZE][SIZE]){ 
-    for (int i = 0; i < SIZE; i++) { 
-            for (int j = 0; j < SIZE; j++) { 
-            printf("%5d ", A[i][j]); 
-            } 
-        printf("\n"); 
-    } 
-
+void mat_sub(int A[SIZE][SIZE],int B[SIZE][SIZE],int R[SIZE][SIZE]){ 
+for (int i = 0;i<SIZE;i++){ 
+for(int j=0;j<SIZE;j++){ 
+R[i][j] = A[i][j] - B[i][j]; 
+ } 
+ } 
+} 
+void mat_mulelm(int A[SIZE][SIZE],int B[SIZE][SIZE],int R[SIZE][SIZE]){ 
+ for (int i = 0;i<SIZE;i++){ 
+for(int j=0;j<SIZE;j++){ 
+R[i][j] = A[i][j] * B[i][j]; 
+} 
+} 
 } 
